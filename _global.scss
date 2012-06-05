@@ -1,0 +1,41 @@
+body {
+  font: 16px/20px $sans-serif;
+  
+  header {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0 20px;
+  }
+  
+  .button {
+    @include button;
+    padding: .3em 1em;
+    font-weight: normal;
+  }
+  
+  .hint {
+    color: #555;
+    font-size: .7em;
+  }
+  
+  .review {
+    clear: both;
+      
+    .reviewer-avatar {
+      display: inline-block;
+      max-width: 60px;
+        
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+      
+      .reviewer-name {
+        font-size: .6em;
+      }
+    }
+    
+    p {
+      line-height: 1em;
+    }
+  }
+}
