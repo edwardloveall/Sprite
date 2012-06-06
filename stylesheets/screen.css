@@ -138,7 +138,7 @@ strong {
   font-weight: bold; }
 
 blockquote {
-  margin: 1em 40px; }
+  margin: 0; }
 
 /*
  * Addresses styling not present in S5, Chrome
@@ -421,85 +421,160 @@ table {
   border-spacing: 0; }
 
 body {
-  font: 16px/30px "Varela Round", sans-serif; }
+  font: 16px/20px "Varela Round", sans-serif; }
+  body a {
+    color: #444; }
   body header {
-    border-bottom: 1px solid #ddd;
+    background-color: #292929;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #292929), color-stop(100%, #494949));
+    background-image: -webkit-linear-gradient(top, #292929, #494949);
+    background-image: -moz-linear-gradient(top, #292929, #494949);
+    background-image: -ms-linear-gradient(top, #292929, #494949);
+    background-image: -o-linear-gradient(top, #292929, #494949);
+    background-image: linear-gradient(top, #292929, #494949);
+    border-bottom: 1px solid #dddddd;
+    color: #fff;
     padding: 10px 0 20px; }
   body .button {
-    border: 1px solid #076fe4;
+    border: 1px solid #535353;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
-    -webkit-box-shadow: inset 0 1px 0 0 #8ebcf1;
-    -moz-box-shadow: inset 0 1px 0 0 #8ebcf1;
-    box-shadow: inset 0 1px 0 0 #8ebcf1;
+    -webkit-box-shadow: inset 0 1px 0 0 #9d9d9d;
+    -moz-box-shadow: inset 0 1px 0 0 #9d9d9d;
+    box-shadow: inset 0 1px 0 0 #9d9d9d;
     color: white;
     display: inline-block;
     font-size: 11px;
     font-weight: bold;
-    background-color: #4294f0;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4294f0), color-stop(100%, #0776f3));
-    background-image: -webkit-linear-gradient(top, #4294f0, #0776f3);
-    background-image: -moz-linear-gradient(top, #4294f0, #0776f3);
-    background-image: -ms-linear-gradient(top, #4294f0, #0776f3);
-    background-image: -o-linear-gradient(top, #4294f0, #0776f3);
-    background-image: linear-gradient(top, #4294f0, #0776f3);
+    background-color: #777777;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #777777), color-stop(100%, #5b5b5b));
+    background-image: -webkit-linear-gradient(top, #777777, #5b5b5b);
+    background-image: -moz-linear-gradient(top, #777777, #5b5b5b);
+    background-image: -ms-linear-gradient(top, #777777, #5b5b5b);
+    background-image: -o-linear-gradient(top, #777777, #5b5b5b);
+    background-image: linear-gradient(top, #777777, #5b5b5b);
     padding: 7px 18px;
     text-decoration: none;
-    text-shadow: 0 1px 0 #0065d6;
+    text-shadow: 0 1px 0 #494949;
     -webkit-background-clip: padding-box;
     padding: .3em 1em;
     font-weight: normal; }
     body .button:hover:not(:disabled) {
-      -webkit-box-shadow: inset 0 1px 0 0 #60a2ec;
-      -moz-box-shadow: inset 0 1px 0 0 #60a2ec;
-      box-shadow: inset 0 1px 0 0 #60a2ec;
+      -webkit-box-shadow: inset 0 1px 0 0 #848484;
+      -moz-box-shadow: inset 0 1px 0 0 #848484;
+      box-shadow: inset 0 1px 0 0 #848484;
       cursor: pointer;
-      background-color: #2f87ea;
-      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #2f87ea), color-stop(100%, #086fe3));
-      background-image: -webkit-linear-gradient(top, #2f87ea, #086fe3);
-      background-image: -moz-linear-gradient(top, #2f87ea, #086fe3);
-      background-image: -ms-linear-gradient(top, #2f87ea, #086fe3);
-      background-image: -o-linear-gradient(top, #2f87ea, #086fe3);
-      background-image: linear-gradient(top, #2f87ea, #086fe3); }
+      background-color: #6a6a6a;
+      background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6a6a6a), color-stop(100%, #535353));
+      background-image: -webkit-linear-gradient(top, #6a6a6a, #535353);
+      background-image: -moz-linear-gradient(top, #6a6a6a, #535353);
+      background-image: -ms-linear-gradient(top, #6a6a6a, #535353);
+      background-image: -o-linear-gradient(top, #6a6a6a, #535353);
+      background-image: linear-gradient(top, #6a6a6a, #535353); }
     body .button:active:not(:disabled) {
-      border: 1px solid #076fe4;
-      -webkit-box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee;
-      -moz-box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee;
-      box-shadow: inset 0 0 8px 4px #0868d3, inset 0 0 8px 4px #0868d3, 0 1px 1px 0 #eeeeee; }
+      border: 1px solid #535353;
+      -webkit-box-shadow: inset 0 0 8px 4px #4c4c4c, inset 0 0 8px 4px #4c4c4c, 0 1px 1px 0 #eeeeee;
+      -moz-box-shadow: inset 0 0 8px 4px #4c4c4c, inset 0 0 8px 4px #4c4c4c, 0 1px 1px 0 #eeeeee;
+      box-shadow: inset 0 0 8px 4px #4c4c4c, inset 0 0 8px 4px #4c4c4c, 0 1px 1px 0 #eeeeee; }
     body .button:disabled {
       opacity: 0.5;
       cursor: not-allowed; }
   body .hint {
-    color: #555;
+    color: #999;
     font-size: .7em; }
   body .review {
-    clear: both; }
-    body .review .reviewer-avatar {
-      float: left;
-      max-width: 60px; }
-      body .review .reviewer-avatar img {
-        display: block;
-        margin: 0 auto; }
-      body .review .reviewer-avatar .reviewer-name {
-        font-size: .6em; }
+    border: 1px solid #dddddd;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0px 0px 5px 1px #eeeeee;
+    -moz-box-shadow: inset 0px 0px 5px 1px #eeeeee;
+    box-shadow: inset 0px 0px 5px 1px #eeeeee;
+    clear: both;
+    margin-bottom: 10px;
+    min-height: 5em;
+    padding: 10px 10px 3px 0;
+    position: relative; }
+    body .review img {
+      -webkit-border-radius: 48px;
+      -moz-border-radius: 48px;
+      border-radius: 48px;
+      height: 48px;
+      left: 10px;
+      position: absolute;
+      top: 10px;
+      width: 48px; }
+    body .review blockquote {
+      margin-left: 68px; }
+    body .review .reviewer-name {
+      bottom: 0px;
+      font-size: .6em;
+      position: absolute;
+      right: 10px;
+      text-align: right; }
+      body .review .reviewer-name a {
+        text-decoration: none; }
+  body #screenshots {
+    clear: both;
+    font-size: 0px; }
+    body #screenshots h2 {
+      font-size: 24px; }
+    body #screenshots .screenshot {
+      border: 1px solid #dddddd;
+      display: inline-block;
+      margin: 5px;
+      padding: 3px; }
+  body footer {
+    color: #888;
+    font-size: .7em;
+    text-align: center; }
 
 @media (max-width: 500px) {
-  body {
+  body header, body footer {
     padding: 10px; }
-    body header {
-      text-align: center; }
-      body header img {
-        display: block;
-        margin: 0px auto; }
-      body header .button {
-        display: block;
-        margin: 0px auto; }
-      body header #try {
-        margin-bottom: 20px; }
-        body header #try .button {
-          font-size: 2em;
-          width: 100px; }
-      body header #buy .button {
-        display: block;
-        width: 90px; } }
+  body header {
+    text-align: center; }
+    body header img {
+      display: block;
+      margin: 0px auto; }
+    body header .button {
+      display: block;
+      margin: 0px auto; }
+    body header #try {
+      margin-bottom: 20px; }
+      body header #try .button {
+        font-size: 2em;
+        width: 100px; }
+    body header #buy .button {
+      display: block;
+      line-height: 2em;
+      width: 90px; }
+  body #content-wrapper {
+    padding: 10px; } }
+@media (min-width: 501px) {
+  body header, body #features, body #reviews, body #screenshots, body #about-us, body footer {
+    padding: 20px; }
+  body header {
+    text-align: center; }
+    body header img, body header > div {
+      display: inline-block;
+      vertical-align: top; }
+    body header h1 {
+      font-size: 3em; }
+    body header #try .button {
+      font-size: 2em; }
+    body header #buy {
+      margin-top: 2em; }
+  body #content-wrapper {
+    margin: 0 auto;
+    max-width: 1000px; }
+    body #content-wrapper #reviews .review {
+      display: inline-block;
+      max-width: 30%;
+      min-width: 230px;
+      vertical-align: top; } }
+@media (min-width: 501px) and (max-width: 768px) {
+  body #content-wrapper #reviews .review {
+    display: block;
+    max-width: 100%; } }

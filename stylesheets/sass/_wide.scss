@@ -1,0 +1,51 @@
+@media (min-width: 501px) {
+  body {
+    
+    header, #features, #reviews, #screenshots, #about-us, footer {
+      padding: 20px;
+    }
+    
+    header {
+      text-align: center;
+      
+      img, > div {
+        display: inline-block;
+        vertical-align: top;
+      }
+      
+      h1 {
+        font-size: 3em;
+      }
+      
+      #try .button {
+        font-size: 2em;
+      }
+      
+      #buy {
+        margin-top: 2em;
+      }
+    }
+    
+    #content-wrapper {
+      margin: 0 auto;
+      max-width: 1000px;
+      
+      #reviews {
+      
+        .review {
+          display: inline-block;
+          max-width: 30%;
+          min-width: 230px;
+          vertical-align: top;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  body #content-wrapper #reviews .review {
+    display: block;
+    max-width: 100%;
+  }
+}

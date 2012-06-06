@@ -1,7 +1,10 @@
 @media (max-width: 500px) {
   body {
-    padding: 10px;
-  
+    
+    header, footer {
+      padding: 10px;
+    }
+    
     header {
       text-align: center;
       
@@ -31,9 +34,14 @@
       #buy {
         .button {
           display: block;
+          line-height: 2em;
           width: 90px;
         }
       }
+    }
+    
+    #content-wrapper {
+      padding: 10px;
     }
   }
 }
