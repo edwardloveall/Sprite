@@ -1,87 +1,65 @@
-body {
-  font: 16px/20px $sans-serif;
-  
-  a {
-    color: #444;
-  }
-  
-  header {
-    @include linear-gradient(#292929, #494949);
-    border-bottom: 1px solid $light-border-color;
-    color: #fff;
-    padding: 10px 0 20px;
-  }
-  
-  .button {
-    @include button(simple, #777);
-    padding: .3em 1em;
-    font-weight: normal;
-  }
-  
-  .hint {
-    color: #999;
-    font-size: .7em;
-  }
-  
-  #features {
-    
-  }
-  
-  .review {
-    border: 1px solid $light-border-color;
-    @include border-radius(4px);
-    @include box-shadow(inset 0px 0px 5px 1px #eee);
-    clear: both;
-    margin-bottom: 10px;
-    min-height: 5em;
-    padding: 10px 10px 3px 0;
-    position: relative;
-    
-    img {
-      @include border-radius(48px);
-      height: 48px;
-      left: 10px;
-      position: absolute;
-      top: 10px;
-      width: 48px;
+header {
+  min-height: 230px;
+  padding: 20px;
+
+  div.header-wrap {
+    margin: 0 auto;
+    max-width: 1000px;
+
+    img.logo-large {
+      float: left;
+      margin-right: flex-gutter();
+      width: flex-grid(8);
     }
-    
-    blockquote {
-      margin-left: 68px;
-    }
-    
-    .reviewer-name {
-      bottom: 0px;
-      font-size: .6em;
-      position: absolute;
-      right: 10px;
-      text-align: right;
-      
-      a {
-        text-decoration: none;
+
+    div.call-to-action {
+      float: left;
+      width: flex-grid(4);
+
+      a.button {
+        @include button;
       }
     }
-  } // .review
-  
-  #screenshots {
-    clear: both;
-    font-size: 0px;
-    
-    h2 {
-      font-size: 24px;
-    }
-    
-    .screenshot {
-      border: 1px solid $light-border-color;
-      display: inline-block;
-      margin: 5px;
-      padding: 3px;
-    }
-  } // #screenshots
-  
-  footer {
-    color: #888;
-    font-size: .7em;
-    text-align: center;
   }
-} // body
+}
+
+div.content-wrapper {
+  > section {
+    clear: both;
+
+    > div.section-wrap {
+      margin: 0 auto;
+      max-width: 1000px;
+    }
+  }
+
+  section.main-copy {
+    div.screenshot-scroller {
+      float: left;
+      margin-right: flex-gutter();
+      width: flex-grid(4);
+    }
+
+    p.copy {
+      float: left;
+      width: flex-grid(8);
+    }
+  }
+
+  section.features {
+    div.section-wrap {
+      section.feature {
+        p.copy {
+          float: left;
+          margin-right: flex-gutter();
+          width: flex-grid(8);
+        }
+
+        div.feature-title {
+          float: left;
+          width: flex-grid(4);
+        }
+      }
+    }
+  }
+}

@@ -6,3 +6,6 @@ I'd like the site to be easy for anyone to come to the website and quickly be ab
 * Purchase the app
 * Download a trial of the app
 * Find out exactly what the app can do
+
+Run sass watch:
+    sass --watch stylesheets/sass/screen.scss:stylesheets/screen.css -r ./stylesheets/sass/bourbon/lib/bourbon.rb
